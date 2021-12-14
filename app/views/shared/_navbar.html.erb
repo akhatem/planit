@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="#">
+            <img src="<%= " ../assets/navbar-logo.png" %>" alt="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <div class="row">
+                <div class="col">
+                    <ul class="navbar-nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link <%= is_active?(root_path) %>" href="<%= root_path %>">
+                        <%= I18n.t("home.main") %>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link <%= is_active?(departments_path) %>" href="<%= departments_path %>" id="navbarDropdownMenuLink" role="button">
+                        <%= I18n.t("home.departments") %>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link <%= is_active?(projects_path) %>" href="<%= projects_path %>" id="navbarDropdownMenuLink" role="button">
+                        <%= I18n.t("home.projects") %>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link <%= is_active?(clients_path) %>" href="<%= clients_path %>" id="navbarDropdownMenuLink" role="button">
+                        <%= I18n.t("home.clients") %>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link <%= is_active?(about_us_path) %>" href="<%= about_us_path %>">
+                        <%= I18n.t("home.about_us") %>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link <%= is_active?(contact_us_path) %>" href="<%= contact_us_path %>">
+                        <%= I18n.t("home.contact_us") %>
+                    </a>
+                </li>
+            </ul>
+                </div>
+            </div>
+        </div>
+        <% if I18n.locale==I18n.default_locale %>
+            <%= link_to "عربي" , { locale: "ar" }, class: "lang" %>
+        <% else %>
+            <%= link_to "English" , { locale: "en" }, class: "lang" %>
+        <% end %>        
+    </div>
+</nav>

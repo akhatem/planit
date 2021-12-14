@@ -1,0 +1,12 @@
+ar:
+  home:
+    main: "الصفحة الرئيسية"
+    about_us: "عن الشركة"
+    departments: "الأقسام"
+    projects: "المشاريع"
+    clients: "العملاء"
+    contact_us: "تواصل معنا"
+    gallery: "معرض الصور"
+    about_company: "نبذة عن الشركة"
+  carousel:
+    text: "عارض الصور"

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <html lang="<%= I18n.locale.to_s %>"></html>
+  <head>
+    <title>Planit</title>
+    <%= favicon_link_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "styles_#{I18n.locale.to_s}", media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_include_tag Ckeditor.cdn_url %>
+  </head>
+  
+  <body dir="<%= I18n.locale.to_s == 'ar' ? 'rtl' : 'ltr' %>">
+    <div class="container-fluid" >
+      <div class="row">
+        <div class="col-md-12">
+          <%= render 'shared/navbar' %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <%= yield %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <%= render 'shared/footer' %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

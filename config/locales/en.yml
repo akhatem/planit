@@ -1,0 +1,12 @@
+en:
+  home:
+    main: "Home"
+    about_us: "About Us"
+    departments: "Deparments"
+    projects: "Projects"
+    clients: "Clients"
+    contact_us: "Contact Us"
+    gallery: "Gallery"
+    about_company: "About The Company"
+  carousel:
+    text: "Carousel Here"
