@@ -1,29 +1,27 @@
 class DepartmentsController < ApplicationController
-  before_action :set_department, only: [:show, :edit, :update, :destroy]
-  
+  before_action :set_department, only: %i[show edit update destroy]
+
   def index
-    @departments = Department.all.order(id: :asc)
+    @departments = if params[:department_type] == 'all'
+                     Department.all.order(id: :asc)
+                   else
+                     Department.where(department_type: params[:department_type]).order(id: :asc)
+                   end
   end
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
-  def update
-  end
+  def update; end
 
-  def new
-  end
+  def new; end
 
-  def create
-  end
+  def create; end
 
-  def destroy
-  end
+  def destroy; end
 
-private
+  private
 
   def set_department
     @department = Department.find(params[:id])

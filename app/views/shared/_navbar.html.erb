@@ -18,19 +18,19 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <%= is_active?(departments_path) %>" href="<%= departments_path %>" id="navbarDropdownMenuLink" role="button">
+                    <a class="nav-link <%= is_active?(departments_path) %>" href="<%= departments_path(department_type: "all") %>" role="button">
                         <%= I18n.t("home.departments") %>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <%= is_active?(projects_path) %>" href="<%= projects_path %>" id="navbarDropdownMenuLink" role="button">
+                    <a class="nav-link <%= is_active?(projects_path) %>" href="<%= projects_path %>" role="button">
                         <%= I18n.t("home.projects") %>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <%= is_active?(clients_path) %>" href="<%= clients_path %>" id="navbarDropdownMenuLink" role="button">
+                    <a class="nav-link <%= is_active?(clients_path) %>" href="<%= clients_path %>" role="button">
                         <%= I18n.t("home.clients") %>
                     </a>
                 </li>

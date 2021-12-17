@@ -2,7 +2,7 @@ en:
   home:
     main: "Home"
     about_us: "About Us"
-    departments: "Deparments"
+    departments: "Departments"
     projects: "Projects"
     clients: "Clients"
     contact_us: "Contact Us"
@@ -10,3 +10,11 @@ en:
     about_company: "About The Company"
   carousel:
     text: "Carousel Here"
+  departments:
+    all: "All"
+    supervision: "Supervision"
+    urban_observation: "urban Observation"
+    architecture: "Architecture"
+    project_management: "Project Management"
+    urban_planning: "Urban Planning"
+    

@@ -5,19 +5,104 @@
         </h1>
     </div>
 </div>
-<div class="custom-container">
-    <!-- <div class="container_inner clearfix">
-        <div class="title_subtitle_holder">
-            <div class="title_subtitle_holder_inner">
-                
-            </div>
-        </div>
-    </div> -->
-</div>
+<div class="custom-container"></div>
 
 <nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Another Link</a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "all")) %>" href="<%= departments_path(department_type: "all") %>"><%= I18n.t("departments.all") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "supervision")) %>" href="<%= departments_path(department_type: "supervision") %>"><%= I18n.t("departments.supervision") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "urban_observation")) %>" href="#"><%= I18n.t("departments.urban_observation") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "architecture")) %>" href="#"><%= I18n.t("departments.architecture") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "project_management")) %>" href="#"><%= I18n.t("departments.project_management") %></a>
 </nav>
+
+
+
+<div class="row g-4 mb-4 row-cols-3 row-cols-md-4">
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/urban-design.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Urban Planning /</h4>
+                    <h4 class="card-title">Design & Landscaping</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/arch-design.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Architecture Designs</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/geo-db-online-service.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Geo-Databases & Online Services</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/observatory.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Urban Observatory Consultations</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/observatroy-studies.png " %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Feasibility Studies For Urban Projects</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/urban-consultation.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Urban Management Consultations</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/project-management.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title">Project Management</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

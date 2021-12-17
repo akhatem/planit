@@ -10,3 +10,9 @@ ar:
     about_company: "نبذة عن الشركة"
   carousel:
     text: "عارض الصور"
+  departments:
+    all: "الكل"
+    supervision: "إشراف"
+    urban_observation: "المراقبة الحضرية"
+    architecture: "الهندسة المعمارية"
+    project_management: "إدارة المشاريع"
