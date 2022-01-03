@@ -8,11 +8,11 @@
 <div class="custom-container"></div>
 
 <nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path(department_type: "all")) %>" href="<%= projects_path(department_type: "all") %>"><%= I18n.t("projects.all") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path(department_type: "supervision")) %>" href="<%= projects_path(department_type: "supervision") %>"><%= I18n.t("projects.supervision") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path(department_type: "urban_observation")) %>" href="<%= projects_path(department_type: "urban_observation") %>"><%= I18n.t("projects.urban_observation") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path(department_type: "architecture")) %>" href="<%= projects_path(department_type: "architecture") %>"><%= I18n.t("projects.architecture") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path(department_type: "project_management")) %>" href="<%= projects_path(department_type: "project_management") %>"><%= I18n.t("projects.project_management") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.all") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.supervision") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.urban_observation") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.architecture") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.project_management") %></a>
 </nav>
 
 
