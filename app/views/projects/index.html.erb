@@ -1,2 +1,108 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<div class="row">
+    <div class="col">
+        <h1 class="header-text">
+            <%= I18n.t("home.projects") %>
+        </h1>
+    </div>
+</div>
+<div class="custom-container"></div>
+
+<nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.all") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.supervision") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.urban_observation") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.architecture") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(projects_path) %>" href="#"><%= I18n.t("projects.project_management") %></a>
+</nav>
+
+
+
+<div class="row g-4 mb-4 row-cols-3 row-cols-md-4">
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/urban-design.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.urban_planning") %></h4>
+                    <h4 class="card-title"><%= I18n.t("projects.design_and_landscaping") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/arch-design.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.architecture_designs") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/geo-db-online-service.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.geo_location_and_online_services") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/observatory.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.urban_observatory_consultations") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/observatroy-studies.png " %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.feasibility_studies") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/urban-consultation.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.urban_management_consultations") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="custom-card">
+            <div class="row">
+                <img class="img-dep" src="<%= " ../assets/project-management.png" %>" alt="Avatar" height=200>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <h4 class="card-title"><%= I18n.t("projects.project_management") %></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
