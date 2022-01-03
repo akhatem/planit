@@ -10,9 +10,9 @@
 <nav class="nav nav-pills flex-column flex-sm-row">
     <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "all")) %>" href="<%= departments_path(department_type: "all") %>"><%= I18n.t("departments.all") %></a>
     <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "supervision")) %>" href="<%= departments_path(department_type: "supervision") %>"><%= I18n.t("departments.supervision") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "urban_observation")) %>" href="#"><%= I18n.t("departments.urban_observation") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "architecture")) %>" href="#"><%= I18n.t("departments.architecture") %></a>
-    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "project_management")) %>" href="#"><%= I18n.t("departments.project_management") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "urban_observation")) %>" href="<%= departments_path(department_type: "urban_observation") %>"><%= I18n.t("departments.urban_observation") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "architecture")) %>" href="<%= departments_path(department_type: "architecture") %>"><%= I18n.t("departments.architecture") %></a>
+    <a class="flex-sm-fill text-sm-center nav-link <%= is_active_link?(departments_path(department_type: "project_management")) %>" href="<%= departments_path(department_type: "project_management") %>"><%= I18n.t("departments.project_management") %></a>
 </nav>
 
 
@@ -25,8 +25,8 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Urban Planning /</h4>
-                    <h4 class="card-title">Design & Landscaping</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.urban_planning") %></h4>
+                    <h4 class="card-title"><%= I18n.t("departments.design_and_landscaping") %></h4>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Architecture Designs</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.architecture_designs") %></h4>
                 </div>
             </div>
         </div>

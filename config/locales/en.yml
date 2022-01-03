@@ -7,7 +7,15 @@ en:
     clients: "Clients"
     contact_us: "Contact Us"
     gallery: "Gallery"
-    about_company: "About The Company"
+    about_company:
+      header: "About The Company"
+      body: "PLANit believes that this combination of integrated professionals, cross-sector expertise, creativity, enthusiasm and adaptability results in smoother processes and higher quality results. Through our network of offices and alliances, we aim to deliver our experience and expertise across different continents and cultures. As a result of our collaborative approach to sustainable inclusive relationships, we have strengthened partnerships with our sister’s companies:"
+      first_point: "Smart Urban Solutions for Electromechanics and Building Tecnologies (SUS) Egypt."
+      second_point: "Planning House for Administrative Consultants (PHAC) U.A.E."
+      third_point: "Faqih Engineers (FA) K.S.A."
+    our_projects: "Our Projects"
+    projects_text: "we are a full house design firm established in 2013, and we constantly seek to further our knowledge and understanding behind the “Scientific Art” of Planning. Through our expertise of engineering and design we provide enhancements to interiors, and exteriors, of a given space or building, to achieve a healthier, more aesthetically pleasing environment for your heart, mind and soul."
+    check_our_projects_btn: "Check Our Projects"
   carousel:
     text: "Carousel Here"
   departments:
@@ -17,4 +25,11 @@ en:
     architecture: "Architecture"
     project_management: "Project Management"
     urban_planning: "Urban Planning"
+    design_and_landscaping: "Design & Landscaping"
+    architecture_designs: "Architecture Designs"
+    geo_location_and_online_services: "Geo Databases and Online Services"
+    urban_observatory_consultations: "Urban Observatory Consultations"
+    feasibility_studies: "Feasibility Studies"
+    urban_management_consultations: "Urban Management Consultations"
+
     

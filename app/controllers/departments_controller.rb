@@ -3,9 +3,9 @@ class DepartmentsController < ApplicationController
 
   def index
     @departments = if params[:department_type] == 'all'
-                     Department.all.order(id: :asc)
+                    Department.all.order(id: :asc)
                    else
-                     Department.where(department_type: params[:department_type]).order(id: :asc)
+                    Department.where(department_type: params[:department_type]).order(id: :asc)
                    end
   end
 

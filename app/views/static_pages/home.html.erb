@@ -39,29 +39,21 @@
         <div class="col-md-6">
             <div class="row">
                 <h4 class="card-company-title">
-                    <%= I18n.t("home.about_company") %>
+                    <%= I18n.t("home.about_company.header") %>
                 </h4>
             </div>
             <div class="row">
                 <p class="card-company-desc">
-                    PLANit believes that this combination of integrated
-                    professionals, cross-sector expertise, creativity,
-                    enthusiasm and adaptability results in smoother
-                    processes and higher quality results.
-                    Through our network of offices and alliances, we aim
-                    to deliver our experience and expertise across different
-                    continents and cultures. As a result of our collaborative
-                    approach to sustainable inclusive relationships, we have
-                    strengthened partnerships with our sister’s companies:
+                    <%= I18n.t("home.about_company.body") %>
                 <ul>
                     <li class="co-list">
-                        Smart Urban Solutions for Electromechanics and Building Tecnologies (SUS) Egypt.
+                        <%= I18n.t("home.about_company.first_point") %>
                     </li>
                     <li class="co-list">
-                        Planning House for Administrative Consultants (PHAC) U.A.E.
+                        <%= I18n.t("home.about_company.second_point") %>
                     </li>
                     <li class="co-list">
-                        Faqih Engineers (FA) K.S.A.
+                        <%= I18n.t("home.about_company.third_point") %>
                     </li>
                 </ul>
                 </p>
@@ -142,8 +134,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Urban Planning /</h4>
-                    <h4 class="card-title">Design & Landscaping</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.urban_planning") %>&nbsp;/&nbsp;<%= I18n.t("departments.design_and_landscaping") %></h4>
                 </div>
             </div>
         </div>
@@ -155,7 +146,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Architecture Designs</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.architecture_designs") %></h4>
                 </div>
             </div>
         </div>
@@ -167,7 +158,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Geo-Databases & Online Services</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.geo_location_and_online_services") %></h4>
                 </div>
             </div>
         </div>
@@ -179,7 +170,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Urban Observatory Consultations</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.urban_observatory_consultations") %></h4>
                 </div>
             </div>
         </div>
@@ -192,7 +183,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Feasibility Studies For Urban Projects</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.feasibility_studies") %></h4>
                 </div>
             </div>
         </div>
@@ -204,7 +195,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Urban Management Consultations</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.urban_management_consultations") %></h4>
                 </div>
             </div>
         </div>
@@ -217,7 +208,7 @@
             </div>
             <div class="row">
                 <div class="card-body">
-                    <h4 class="card-title">Project Management</h4>
+                    <h4 class="card-title"><%= I18n.t("departments.project_management") %></h4>
                 </div>
             </div>
         </div>
@@ -228,22 +219,11 @@
 <div class="row mb-3">
     <div class="col">
         <div class="card-projects">
-            <p class="title">Our Projects</p>
-            <p class="text">we are a full house design firm
-                established in 2013, and we constantly
-                seek to further our knowledge and
-                understanding behind the “Scientific
-                Art” of Planning. Through our
-                expertise of engineering and design
-                we provide enhancements to interiors,
-                and exteriors, of a given space or
-                building, to achieve a healthier, more
-                aesthetically pleasing environment
-                for your heart, mind and soul.
-            </p>
+            <p class="title"><%= I18n.t("home.our_projects") %></p>
+            <p class="text"><%= I18n.t("home.projects_text") %></p>
             <!-- <button type="button" class="btn projects-btn">
                 <a href="#">Check our projects</a></button> -->
-                <%= link_to "Check Our Projects", projects_path, class: "btn projects-btn" %>
+                <%= link_to I18n.t("home.check_our_projects_btn"), projects_path, class: "btn projects-btn" %>
         </div>
     </div>
 </div>
