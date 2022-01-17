@@ -1,8 +1,8 @@
 lock "~> 3.16.0"
 
-set :application, "planit"
+set :application, "planitint"
 
-set :repo_url, "git@github.com:akhatem/planit.git"
+set :repo_url, "git@github.com:akhatem/planitint.git"
 
 set :branch, "main"
 

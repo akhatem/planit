@@ -1,5 +1,5 @@
 {
-  "name": "planit",
+  "name": "planitint",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
