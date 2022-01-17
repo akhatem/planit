@@ -1,22 +1,21 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: asdasd123
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: planit_development
+  database: planitint_development
+  username: postgres
+  password: asdasd123
   host: localhost
 
 test:
   <<: *default
-  database: planit_test
+  database: planitint_test
   host: localhost
 
 production:
   <<: *default
-  database: planit_production
-  username: planit
+  database: planitint_production
   password: <%= ENV['PLANIT_DATABASE_PASSWORD'] %>
